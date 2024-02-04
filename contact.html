@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        form {
+            border: 2px solid black;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 1.5em;
+            display: block; /* Ensure the form is a block-level element */
+            width: fit-content;
+            line-height: 25px;
+        }
+
+        form h1 {
+            text-align: center;
+        }
+
+        input {
+            padding: 10px 40px 10px 40px; 
+            border-radius: 0.5rem;
+        }
+
+        #alamat {
+            padding: 40px 80px 40px 80px; 
+            border-radius: 0.5rem;
+        }
+        .radio{
+            margin-bottom: 10px;
+            line-height: 30px;
+        }
+
+        button {
+            border-radius: 1.5em;
+            padding: 5px 15px 5px 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <form id="contact-form" method="post" action="contact.html">
+        <h1>Contact Form</h1>
+        <div style="line-height: 30px; margin-bottom: 10px;">
+            <label for="nama">Nama: </label><br>
+            <input id="nama" name="nama">
+        </div>
+        <div style="line-height: 30px; margin-bottom: 10px;">
+            <label for="email">Email: </label><br>
+            <input id="email" type="email" name="email">
+        </div>
+        <div style="line-height: 30px; margin-bottom: 10px;"> 
+            <label for="alamat">Alamat: </label><br>
+            <input id="alamat" name="alamat">
+        </div>
+        <div class="radio">
+            <label for="negeri">Negeri: </label>
+            <div style="display: block; width: fit-content; padding: 10px 10px 10px 10px; border: 2px solid black;">
+                <div>
+                    <label for="perlis">Perlis</label>
+                    <input type="radio" id="perlis" name="perlis">
+                </div>
+                <div>
+                    <label for="kedah">Kedah</label>
+                    <input type="radio" id="kedah" name="kedah">
+                </div>
+                <div>
+                    <label for="pulau-pinang">Pulau Pinang</label>
+                    <input type="radio" id="pulau-pinang" name="pulau-pinang">
+                </div>
+                <div>
+                    <label for="selangor">Selangor</label>
+                    <input type="radio" id="selangor" name="selangor">
+                </div>
+                <div>
+                    <label for="kuala-lumpur">Kuala Lumpur</label>
+                    <input type="radio" id="kuala-lumpur" name="kuala-lumpur">
+                </div>
+                <div>
+                    <label for="negeri-sembilan">Negeri Sembilan</label>
+                    <input type="radio" id="negeri-sembilan" name="negeri-sembilan">
+                </div>
+                <div>
+                    <label for="melaka">Melaka</label>
+                    <input type="radio" id="melaka" name="melaka">
+                </div>
+                <div>
+                    <label for="johor">Johor</label>
+                    <input type="radio" id="johor" name="johor">
+                </div>
+                <div>
+                    <label for="pahang">Pahang</label>
+                    <input type="radio" id="pahang" name="pahang">
+                </div>
+                <div>
+                    <label for="terengganu">Terengganu</label>
+                    <input type="radio" id="terengganu" name="terengganu">
+                </div>
+                <div>
+                    <label for="kelantan">Kelantan</label>
+                    <input type="radio" id="kelantan" name="kelantan">
+                </div>
+                <div>
+                    <label for="sarawak">Sarawak</label>
+                    <input type="radio" id="sarawak" name="sarawak">
+                </div>
+                <div>
+                    <label for="sabah">Sabah</label>
+                    <input type="radio" id="sabah" name="sabah">
+                </div>
+            </div>
+        </div>
+        <div style="line-height: 30px; margin-bottom: 20px;">
+            <label for="poskod">Poskod: </label><br>
+            <input type="number" id="poskod" name="poskod">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
